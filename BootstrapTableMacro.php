@@ -1,3 +1,8 @@
+
+<?php
+
+// Kullanım : HTML::tablo(array('ilAdi', 'bolgeAdi'), sistemIller::all(), array('ilAdi' => 'İl Adı', 'bolgeAdi' => 'Bağlı olduğu bölge'), array('bolgeAdi' => ''), 'getSistemIllerIslemler', true, true, false);
+
 HTML::macro('tablo', function($alanlar = array(), $data = array(), $duzenlenecek = array(), $digerBolumler = array(), $adres, $duzenle = true, $sil = true, $goster = true){
 	$tablo = '<table class="table table-hover table-dynamic table-tools">';
 	$tablo .= '<thead>';
